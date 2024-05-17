@@ -53,11 +53,6 @@ Without an LLM, Langchain's functionality revolves around data access and manipu
 Without LLMs, the core functionalities of text generation, translation, and complex question answering are unavailable.
 
 ## Using Mistral AI Alone
-
-### Simple Experimentation
-For basic exploration, Mistral AI's open-source models can be used by those with programming experience. However, this can be challenging.
-
-### Real-World Applications
 Using Mistral AI alone for practical applications can be difficult:
 - Limited Functionality: Building the infrastructure to interact with the LLM can be complex.
 - Data Integration and Processing: Mistral AI alone likely won't handle data retrieval and pre-processing steps.
