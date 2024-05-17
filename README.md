@@ -8,7 +8,7 @@ Mistral AI is a language model that, when combined with Langchain, can be used t
 ### Retrieval-Augmented Generation (RAG)
 Retrieval-Augmented Generation (RAG) is a sophisticated technique in natural language processing (NLP) that combines retrieval-based and generation-based approaches to improve the accuracy and relevance of text generation. In RAG, a language model is augmented with a retrieval mechanism that accesses external knowledge sources, such as databases, documents, or the internet, to retrieve relevant information. This retrieved knowledge is then integrated into the text generation process, enriching the model's understanding and context. By incorporating external information, RAG enhances the accuracy, coherence, and relevance of generated text, making it particularly effective for tasks such as question answering, content generation, and conversational agents.
 
-!(langchain.png)
+![langchain](langchain.png)
 
 
 ## Combining Langchain and Mistral AI
