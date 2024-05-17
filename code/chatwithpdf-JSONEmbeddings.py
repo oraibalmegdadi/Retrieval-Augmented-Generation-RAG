@@ -41,9 +41,6 @@ def get_vectorstore(text_chunks):
             embedding = vectorstore.index.reconstruct(i)
             emb_str = ','.join(map(str, embedding))
             f.write(f'embedding_{i}: {emb_str}\n')
-
-    
-    
     return vectorstore
 
 
@@ -115,9 +112,7 @@ def main():
 
                 # create vector store
                 vectorstore = get_vectorstore(text_chunks)
-                st.write(vectorstore)
-
-
+                #st.write(vectorstore)
                 
                 # create conversation chain
                 st.session_state.conversation = get_conversation_chain(
