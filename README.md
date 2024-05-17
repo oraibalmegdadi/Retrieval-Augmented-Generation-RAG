@@ -8,6 +8,27 @@ Mistral AI is a language model that, when combined with Langchain, can be used t
 ### Retrieval-Augmented Generation (RAG)
 Retrieval-Augmented Generation (RAG) is a sophisticated technique in natural language processing (NLP) that combines retrieval-based and generation-based approaches to improve the accuracy and relevance of text generation. In RAG, a language model is augmented with a retrieval mechanism that accesses external knowledge sources, such as databases, documents, or the internet, to retrieve relevant information. This retrieved knowledge is then integrated into the text generation process, enriching the model's understanding and context. By incorporating external information, RAG enhances the accuracy, coherence, and relevance of generated text, making it particularly effective for tasks such as question answering, content generation, and conversational agents.
 
+## Main steps: 
+
+1. Call the `get_pdf_text(pdf_docs)` function to read and concatenate text from each page of the uploaded PDF documents. 
+    - **Main method for parsing:** PyPDF2 library. 
+    - **Output:** raw_text
+
+2. Call the `get_text_chunks(raw_text)` function to split the extracted text into manageable chunks. 
+    - **Main method:** langchain library. 
+    - **CharacterTextSplitter Parameters:** chunk size: 1000 characters, overlap: 200 characters. 
+    - **Output:** text_chunks
+
+3. Call the `get_vectorstore(text_chunks)` function to generate embeddings for the text chunks and store them in a vector database. 
+    - **Main method:** 
+        - **Embeddings:** [HuggingFace Instructor-XL](https://huggingface.co/hkunlp/instructor-xl)
+        - **FAISS:** A library for efficient similarity search. [More info](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
+    - **Convert the embeddings vectorspace to txt file (embeddings.txt)**
+
+4. Call the `get_conversation_chain(vectorstore)` function to create a conversational chain with the generated vectorstore. 
+    - **This operation relies on the langchain library for creating conversational chains.**
+
+
 ![langchain](langchain.png)
 
 
