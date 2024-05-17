@@ -5,34 +5,18 @@ Langchain is an open-source framework designed to streamline the process of buil
 
 Mistral AI is a language model that, when combined with Langchain, can be used to build powerful language applications. Together, these tools strengthen each other's capabilities, making them highly complementary.
 
+### Retrieval-Augmented Generation (RAG)
+Retrieval-Augmented Generation (RAG) is a sophisticated technique in natural language processing (NLP) that combines retrieval-based and generation-based approaches to improve the accuracy and relevance of text generation. In RAG, a language model is augmented with a retrieval mechanism that accesses external knowledge sources, such as databases, documents, or the internet, to retrieve relevant information. This retrieved knowledge is then integrated into the text generation process, enriching the model's understanding and context. By incorporating external information, RAG enhances the accuracy, coherence, and relevance of generated text, making it particularly effective for tasks such as question answering, content generation, and conversational agents.
+
+!(langchain.png)
+
+
 ## Combining Langchain and Mistral AI
 
 ### Benefits
 - Efficiency: Langchain streamlines development by offering pre-built components.
 - Accuracy: Fine-tuning prompts and parameters in Langchain can lead to more accurate outputs from Mistral LLM.
 - Customization: Tailor applications to specific needs using Langchain’s flexible framework.
-
-### Workflow
-1. **Define the Task:** Langchain defines the task and retrieves data using its agents (e.g., search engines, databases).
-2. **Data Processing:** Langchain pre-processes the data before feeding it to Mistral LLM.
-3. **Perform Analysis:** Mistral LLM analyzes the data and generates a response or performs the desired action (e.g., answering a question).
-4. **Post-process Results:** Langchain further processes the Mistral LLM's output before presenting it to the user.
-
-## Language Models
-
-### Types of Language Models
-- **Statistical Language Models:** Use statistical analysis of text data to predict the next word in a sequence.
-- **Neural Network-based Language Models:** Utilize powerful artificial neural networks to understand complex relationships between words and sentences. Mistral AI offers this type of model.
-
-### Retrieval-Augmented Generation (RAG)
-RAG is a technique used to improve the accuracy and reliability of large language models (LLMs) like those offered by Mistral AI.
-
-### Embeddings
-Embeddings transform complex data, often high-dimensional, into a lower-dimensional representation.
-
-#### Common Types of Embeddings
-- Word Embeddings: Map words to vectors, where words with similar meanings have similar vector representations. Useful for tasks like text classification and recommendation systems.
-- Image Embeddings: Convert images into vectors that capture their semantic content. Valuable for image recognition and retrieval tasks.
 
 ## Langchain Without LLMs
 
